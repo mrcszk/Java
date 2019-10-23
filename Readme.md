@@ -37,3 +37,14 @@ process_command(list) :-
 process_command(exit) :-
     	writeln("Do widzenia!"),
 		fail.
+-------------4
+1
+zero.
+peano_number(zero,0).
+peano_number(s(X), Y) :- peano_number(X, Z),Y is Z+1.
+2
+peano_add(zero, X, X).
+peano_add(s(X), Y, s(Z)) :- peano_add(X, Y, Z).
+3
+peano_times(zero, X, zero).
+peano_times(s(X), Y, s(Z)) :- peano_times(X, Y, Z).
