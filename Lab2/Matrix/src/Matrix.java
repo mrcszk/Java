@@ -6,7 +6,13 @@ public class Matrix {
     int cols;
     public static void main(String[] args ){
         Matrix m = new Matrix(5,5);
-        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9}});
+        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9,8}});
+        Matrix m3 = new Matrix(new double[][]{{5,1,5,5},{0,1,0,0},{0,0,5,0},{5,0,0,1}});
+        System.out.print(m3.determinant());
+        m2.transponded();
+        System.out.print(m2.toString());
+
+
     }
     Matrix(int rows, int cols){
         if(rows<1 || cols<1)
@@ -157,7 +163,7 @@ public class Matrix {
             }
         }
         return sub;
-}
+    }
     Matrix mul(double w){
         Matrix mul = new Matrix(rows, cols);
         for (int i = 0; i < rows; i++) {
@@ -174,7 +180,7 @@ public class Matrix {
         Matrix div = new Matrix(rows, cols);
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                    div.set(i, j, this.get(i, j) / w);
+                div.set(i, j, this.get(i, j) / w);
             }
         }
         return div;
@@ -222,19 +228,39 @@ public class Matrix {
         }
         return m;
     }
-//    public double determinant(){
-//        double determinant;
-//        if(rows != cols ) throw new RuntimeException("Złe wyniary");
-//        if (rows ==1) return get(0,0);
-//        if (rows ==2){
-//            determinant = get(0,0)*get(1,1) - get(0,1)*get(1,0);
-//            return determinant;
-//        }
-//        else{
-//            determinant =get(0,0)*get(1,1)*get(2,2) + get(0,1)*get(1,2)*get(2,0) +
-//                    get(0,2)*get(1,0)*get(2,1) - get(0,2)*get(1,1)*get(2,0) -
-//                    get(0,0)*get(1,2)*get(2,1) - get(1,0)*get(0,1)*get(2,2);
-//            return determinant;
-//        }
-//    }
+    public double determinant(){
+        double determinant=0;
+        if(rows != cols ) throw new RuntimeException("Złe wymiary");
+        if (rows ==1) return get(0,0);
+        else{
+            Matrix m = new Matrix(rows-1,cols-1);
+            for (int i = 0; i < rows; i++) {
+                int index = 0;
+                for (int j = 0; j < cols; j++) {
+                    if (j != i){
+                        for (int k = 0; k < cols - 1; k++) {
+                            m.set(k,index,get(k + 1,j));
+                        }
+                        index++;
+                    }
+                }
+                determinant += Math.pow(-1, i) * data[i] * m.determinant();
+            }
+            return determinant;
+        }
+    }
+    public void transponded(){
+
+        double tmp;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < rows-i; j++) {
+                if(!(rows==cols && rows/2<i)) {
+                    tmp = get(i, j);
+                    set(i, j, get(rows - i - 1, cols - j - 1));
+                    set(rows - i - 1, cols - j - 1, tmp);
+                }
+            }
+        }
+        reshape(cols,rows);
+    }
 }

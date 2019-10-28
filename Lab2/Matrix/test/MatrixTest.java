@@ -78,8 +78,8 @@ public class MatrixTest {
                 count++;
             }
         }
-            if(count != 5) {fail("Błąd ilości przecinków.");}
-            if(!s0.equals(s)) {fail("Błąd");}
+        if(count != 5) {fail("Błąd ilości przecinków.");}
+        if(!s0.equals(s)) {fail("Błąd");}
 //        s= s.replaceAll("(\\[|\\]|\\s)+","");
 //        String[] t = s.split("(,)+");
 //        for(String x:t){
@@ -105,7 +105,7 @@ public class MatrixTest {
     public void reshape() {
         Matrix m1 = new Matrix(4,5);
         try {
-           m1.reshape(3,3);
+            m1.reshape(3,3);
         } catch (RuntimeException e) {
             System.out.println("Złapany wyjątek.");
         }
@@ -205,7 +205,7 @@ public class MatrixTest {
     public void random() {
         Matrix m = new Matrix(5,5);
         m = m.random(5,5);
-        //if(m.get(2,2) ) fail("Błąd");
+        if(m.get(2,2)==0 && m.get(2,3)==0 && m.get(2,4)==0 ) fail("Błąd");
 
     }
 
