@@ -6,10 +6,10 @@ public class Matrix {
     int cols;
     public static void main(String[] args ){
         Matrix m = new Matrix(5,5);
-        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9,8}});
+        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9,8},{10}});
         Matrix m3 = new Matrix(new double[][]{{5,1,5,5},{0,1,0,0},{0,0,5,0},{5,0,0,1}});
         System.out.print(m3.determinant());
-        m2.transponded();
+        m2=m2.transponded1();
         System.out.print(m2.toString());
 
 
@@ -249,18 +249,24 @@ public class Matrix {
             return determinant;
         }
     }
-    public void transponded(){
-
-        double tmp;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < rows-i; j++) {
-                if(!(rows==cols && rows/2<i)) {
-                    tmp = get(i, j);
-                    set(i, j, get(rows - i - 1, cols - j - 1));
-                    set(rows - i - 1, cols - j - 1, tmp);
-                }
+    public Matrix transponded1(){
+        Matrix m = new Matrix(cols,rows);
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+                m.set(i, j, get(j, i));
             }
         }
-        reshape(cols,rows);
+        return m;
     }
+//    public void transponded2(){
+//        reshape(cols,rows);
+//        double tmp;
+//        for (int i = 0; i < cols; i++) {
+//            for (int j = i+1; j < rows; j++) {
+//                    tmp = get(i, j);
+//                    set(i, j, get(j,i));
+//                    set(j,i, tmp);
+//            }
+//        }
+//    }
 }
