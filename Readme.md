@@ -13,3 +13,16 @@
     }
         return col;
     }
+    
+        public Matrix sumRows() {
+        Matrix resultMatrix = new Matrix(1, this.rows);
+        for (int i = 0; i < this.cols; i++) {
+            double sum = 0;
+            for (int j = 0; j < this.rows; j++) {
+                sum += this.data[j * this.cols + i];
+            }
+            resultMatrix.data[i] = sum;
+        }
+        return resultMatrix;
+    }
+}
