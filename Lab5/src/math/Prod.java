@@ -12,7 +12,7 @@ public class Prod extends Node {
         args.add(n1);
     }
     Prod(double c){
-        //wywołaj konstruktor jednoargumentowy przekazując new Constant(c)
+        this(new Constant(c));
     }
 
     Prod(Node n1, Node n2){
@@ -20,7 +20,7 @@ public class Prod extends Node {
         args.add(n2);
     }
     Prod(double c, Node n){
-        //wywołaj konstruktor dwuargumentowy
+        this(new Constant(c),n);
     }
 
 
@@ -31,7 +31,7 @@ public class Prod extends Node {
     }
 
     Prod mul(double c){
-        //???
+        args.add(new Constant(c));
         return null;
     }
 
@@ -39,19 +39,51 @@ public class Prod extends Node {
     @Override
     double evaluate() {
         double result =1;
-        // oblicz iloczyn czynników wołąjąc ich metodę evaluate
+        for (Node node : args) {
+            result *= node.evaluate();
+        }
         return sign*result;
     }
     int getArgumentsCount(){return args.size();}
-
-
+    @Override
+    Node diff(Variable var) {
+        Sum r = new Sum();
+        for(int i=0;i<args.size();i++){
+            Prod m= new Prod();
+            for(int j=0;j<args.size();j++){
+                Node f = args.get(j);
+                if(j==i)m.mul(f.diff(var));
+                else m.mul(f);
+            }
+            r.add(m);
+        }
+        return r;
+    }
     public String toString(){
         StringBuilder b =  new StringBuilder();
+        for ( int i = 0; i < args.size(); i++) {
+            if(args.get(i).toString().equals("0") || args.get(i).toString().isEmpty()) {
+                return b.toString();
+            }
+        }
         if(sign<0)b.append("-");
-        // ...
-        //zaimplementuj
+        for ( int i = 0; i < args.size(); i++) {
+            if ( args.get(i).getSign() < 0 ) b.append("(");
+            if(args.get(i).toString().equals("1")) continue;
+            if ( i > 0 ) b.append("*");
+            b.append(args.get(i).toString());
+            if ( args.get(i).getSign() < 0 ) b.append(")");
+        }
         return b.toString();
     }
 
-
+    @Override
+    boolean isZero(Variable variable)  {
+        for(Node node: args){
+            if(! node.isZero(variable)){
+                return  false;
+            }
+        }
+        return true;
+    }
 }

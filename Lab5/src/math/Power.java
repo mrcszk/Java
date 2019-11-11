@@ -1,5 +1,9 @@
 package math;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 public class Power extends Node {
     double p;
     Node arg;
@@ -16,10 +20,15 @@ public class Power extends Node {
 
 
     int getArgumentsCount(){return 1;}
-
-
+    @Override
+    Node diff(Variable var) {
+        Prod r =  new Prod(sign*p,new Power(arg,p-1));
+        r.mul(arg.diff(var));
+        return r;
+    }
     @Override
     public String toString() {
+        DecimalFormat format = new DecimalFormat("0.#####", new DecimalFormatSymbols(Locale.US));
         StringBuilder b = new StringBuilder();
         if(sign<0)b.append("-");
         int argSign = arg.getSign();
@@ -31,8 +40,11 @@ public class Power extends Node {
         b.append(argString);
         if(useBracket)b.append(")");
         b.append("^");
-        b.append(p);
+        b.append(format.format(p));
         return b.toString();
     }
-
+    @Override
+    boolean isZero(Variable variable) {
+        return false;
+    }
 }
