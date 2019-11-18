@@ -30,6 +30,6 @@ public class Constant extends Node {
     }
     @Override
     boolean isZero(Variable variable) {
-        return true;
+        return false;
     }
 }

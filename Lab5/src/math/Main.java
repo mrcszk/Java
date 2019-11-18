@@ -8,7 +8,7 @@ public class Main {
         //buildAndEvaluate();
         //defineCircle();
         diffPoly();
-        //diffCircle();
+        diffCircle();
     }
     static void buildAndPrint(){
         Variable x = new Variable("x");
@@ -63,7 +63,11 @@ public class Main {
                 .add(2,new Power(x,3))
                 .add(new Power(x,2))
                 .add(-2,x)
-                .add(7);
+                .add(7)
+                .add(new Log(5,new Constant(10)))
+                .add(new Exponent(x))
+                .add(new Sin(x))
+                .add(new Cos(x));
         System.out.print("exp=");
         System.out.println(exp.toString());
 

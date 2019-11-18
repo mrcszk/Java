@@ -45,6 +45,7 @@ public class Prod extends Node {
         return sign*result;
     }
     int getArgumentsCount(){return args.size();}
+
     @Override
     Node diff(Variable var) {
         Sum r = new Sum();
@@ -55,14 +56,16 @@ public class Prod extends Node {
                 if(j==i)m.mul(f.diff(var));
                 else m.mul(f);
             }
-            r.add(m);
+            if (!m.isZero(var)) {
+                r.add(m);
+            }
         }
         return r;
     }
     public String toString(){
         StringBuilder b =  new StringBuilder();
         for ( int i = 0; i < args.size(); i++) {
-            if(args.get(i).toString().equals("0") || args.get(i).toString().isEmpty()) {
+            if(isNecessary(args.get(i))) {
                 return b.toString();
             }
         }
@@ -76,14 +79,16 @@ public class Prod extends Node {
         }
         return b.toString();
     }
-
+    private boolean isNecessary(Node node){
+        return node.toString().equals("0") || node.toString().isEmpty();
+    }
     @Override
     boolean isZero(Variable variable)  {
         for(Node node: args){
-            if(! node.isZero(variable)){
-                return  false;
+            if(node instanceof Constant && node.evaluate() == 0){
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }

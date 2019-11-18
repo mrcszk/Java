@@ -51,17 +51,23 @@ public class Sum extends Node {
         return r;
     }
     public String toString(){
+        if (args.size() == 0) {
+            return new Constant(0).toString();
+        }
         StringBuilder b =  new StringBuilder();
         if(sign<0)b.append("-(");
-
         for ( int i = 0; i < args.size(); i++) {
-            if(!args.get(i).toString().equals("0") && !args.get(i).toString().isEmpty()){
-                if ( i > 0 ) { b.append(" + "); }
+            if(isNecessary(args.get(i))){
+                if ( i == 1 && !args.get(i-1).toString().equals("")) { b.append(" + "); }
+                if ( i > 1) { b.append(" + "); }
                 b.append(args.get(i).toString());
             }
         }
         if(sign<0)b.append(")");
         return b.toString();
+    }
+    boolean isNecessary(Node node){
+        return !node.toString().equals("0") && !node.toString().isEmpty();
     }
     @Override
     boolean isZero(Variable variable) {

@@ -5,14 +5,15 @@ public class Matrix {
     int rows;
     int cols;
     public static void main(String[] args ){
-        Matrix m = new Matrix(5,5);
-        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9,8},{10}});
-        Matrix m3 = new Matrix(new double[][]{{5,1,5,5},{0,1,0,0},{0,0,5,0},{5,0,0,1}});
-        System.out.print(m3.determinant());
-        m2=m2.transponded1();
-        System.out.print(m2.toString());
-
-
+        //Matrix m = new Matrix(5,5);
+//        Matrix m2 = new Matrix(new double[][]{{1,2,3,4},{5,6},{7,8},{9,8},{10}});
+//        Matrix m3 = new Matrix(new double[][]{{5,1,5,5},{0,1,0,0},{0,0,5,0},{5,0,0,1}});
+//        System.out.print(m3.determinant());
+//        m2=m2.transponded1();
+//        System.out.print(m2.toString());
+        Matrix m = new Matrix(new double[][]{{1,2,3},{4,5,6},{7,8,9}});
+        Matrix row = m.sumRows();
+        System.out.print(row.toString());
     }
     Matrix(int rows, int cols){
         if(rows<1 || cols<1)
@@ -269,4 +270,17 @@ public class Matrix {
 //            }
 //        }
 //    }
+
+    //Kartkówka 12.11
+    public Matrix sumRows() {
+        Matrix m = new Matrix(1, this.rows);
+        for (int i = 0; i < this.cols; i++) {
+            double sum = 0;
+            for (int j = 0; j < this.rows; j++) {
+                sum += this.data[j * this.cols + i];
+            }
+            m.data[i] = sum;
+        }
+        return m;
+    }
 }

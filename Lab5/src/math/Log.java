@@ -16,7 +16,7 @@ public class Log extends Node {
 
     @Override
     public String toString() {
-        return "log_" + base + "^(" + value.toString() + ')';
+        return "log_" + base + " (" + value.toString() + ')';
     }
 
     @Override
@@ -29,6 +29,6 @@ public class Log extends Node {
         return 1;
     }
     boolean isZero(Variable variable) {
-        return false;
+        return value instanceof Constant && value.evaluate() == 0;
     }
 }
