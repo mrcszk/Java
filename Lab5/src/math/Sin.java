@@ -19,7 +19,13 @@ public class Sin extends Node {
 
     @Override
     public String toString() {
-        return "sin(" + value.toString() + ')';
+        StringBuilder s =  new StringBuilder();
+        if(sign<0)s.append("-(");
+        s.append("sin(");
+        s.append( value.toString());
+        s.append( ')');
+        if(sign<0)s.append(")");
+        return s.toString();
     }
 
     @Override
@@ -37,5 +43,11 @@ public class Sin extends Node {
     @Override
     boolean isZero(Variable variable) {
         return false;
+    }
+
+    @Override
+    Node simplify(){
+        return this;
+
     }
 }

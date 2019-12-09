@@ -48,11 +48,14 @@ public class Sum extends Node {
         for(Node n:args){
             if(!(isZero(var))){r.add(n.diff(var));
         }}
-        return r;
+        return r.simplify();
     }
     public String toString(){
         if (args.size() == 0) {
             return new Constant(0).toString();
+        }
+        if (args.size() == 1) {
+            return args.get(0).toString();
         }
         StringBuilder b =  new StringBuilder();
         if(sign<0)b.append("-(");
@@ -78,5 +81,30 @@ public class Sum extends Node {
         }
         return true;
     }
+    @Override
+    Node simplify() {
+        for (Node arg : args) {
+            arg.simplify();
+        }
+        double x = 0;
+        List<Node> y = new ArrayList<>();
 
+        for (Node arg : args) {
+            if (arg instanceof Constant) {
+                y.add(arg);
+                double z = arg.evaluate();
+                if (z != 0) {
+                    x += z;
+                }
+            }else if (arg.getArgumentsCount() == 0) {
+                y.add(arg);
+            }
+        }
+        for (Node y1 : y) {
+            args.remove(y1);
+        }
+        if (x != 0)
+            args.add(new Constant(x));
+        return this;
+    }
 }

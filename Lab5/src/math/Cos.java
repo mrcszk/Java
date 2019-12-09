@@ -18,7 +18,13 @@ public class Cos extends Node {
 
     @Override
     public String toString() {
-        return "cos(" + value.toString() + ')';
+        StringBuilder s =  new StringBuilder();
+        if(sign<0)s.append("-(");
+        s.append("cos(");
+        s.append(value.toString());
+        s.append(')');
+        if(sign<0)s.append(")");
+        return s.toString();
     }
 
     @Override
@@ -35,5 +41,11 @@ public class Cos extends Node {
     @Override
     boolean isZero(Variable variable) {
         return false;
+    }
+
+    @Override
+    Node simplify(){
+        return this;
+
     }
 }

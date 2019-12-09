@@ -18,7 +18,13 @@ public class Exponent extends Node {
 
     @Override
     public String toString() {
-        return "e^(" + value.toString() + ')';
+        StringBuilder s =  new StringBuilder();
+        if(sign<0)s.append("-(");
+        s.append("e^(");
+        s.append(value.toString());
+        s.append(')');
+        if(sign<0)s.append(")");
+        return s.toString();
     }
 
     @Override
@@ -32,5 +38,11 @@ public class Exponent extends Node {
     }
     boolean isZero(Variable variable) {
         return false;
+    }
+
+    @Override
+    Node simplify(){
+        return this;
+
     }
 }

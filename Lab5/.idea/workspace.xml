@@ -2,19 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607783cc-ad88-419b-8221-865f040ca34d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab6/Lab6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2/Matrix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Matrix/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/Matrix/out/production/Matrix/META-INF/Matrix.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/Matrix/out/production/Matrix/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Matrix/out/production/Matrix/Matrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2/Matrix/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Matrix/src/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Cos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Cos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Exponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Exponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Power.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Prod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Prod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Sin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Sin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab5/math/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab5/math/Variable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Cos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Cos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Exponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Exponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Power.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Prod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Sin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Sin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/out/production/Lab6/CSV/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/out/production/Lab6/CSV/CSVReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/CSV/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/CSV/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,32 +45,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/math/Prod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1206">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Constant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Power.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Sum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Variable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding>
                 <element signature="e#570#571#0" expanded="true" />
                 <element signature="e#620#621#0" expanded="true" />
@@ -77,65 +103,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Sum.java">
+        <entry file="file://$PROJECT_DIR$/src/math/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/math/Prod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-107">
-              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#1826#1827#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/Exponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="e#316#317#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -143,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Sin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="57">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#93#94#0" expanded="true" />
                 <element signature="e#127#128#0" expanded="true" />
@@ -152,10 +123,6 @@
                 <element signature="e#200#201#0" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
                 <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,18 +131,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Cos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="238">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#92#93#0" expanded="true" />
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#151#152#0" expanded="true" />
                 <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
                 <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Exponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/math/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,22 +188,14 @@
         <option value="$PROJECT_DIR$/src/math/Node.java" />
         <option value="$PROJECT_DIR$/src/math/Power.java" />
         <option value="$PROJECT_DIR$/src/math/Variable.java" />
-        <option value="$PROJECT_DIR$/src/math/Exponent.java" />
-        <option value="$PROJECT_DIR$/src/math/Cos.java" />
-        <option value="$PROJECT_DIR$/src/math/Sin.java" />
-        <option value="$PROJECT_DIR$/src/math/Sum.java" />
         <option value="$PROJECT_DIR$/src/math/Constant.java" />
+        <option value="$PROJECT_DIR$/src/math/Prod.java" />
+        <option value="$PROJECT_DIR$/src/math/Sin.java" />
+        <option value="$PROJECT_DIR$/src/math/Cos.java" />
+        <option value="$PROJECT_DIR$/src/math/Exponent.java" />
         <option value="$PROJECT_DIR$/src/math/Log.java" />
         <option value="$PROJECT_DIR$/src/math/Main.java" />
-        <option value="$PROJECT_DIR$/src/math/Prod.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/src/math/Sum.java" />
       </list>
     </option>
   </component>
@@ -231,7 +212,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,16 +287,20 @@
       <workItem from="1573467579902" duration="18136000" />
       <workItem from="1574006456872" duration="3193000" />
       <workItem from="1574088130944" duration="5819000" />
+      <workItem from="1575324477313" duration="1532000" />
+      <workItem from="1575357573187" duration="3569000" />
+      <workItem from="1575372323096" duration="69000" />
+      <workItem from="1575820398474" duration="439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32227000" />
+    <option name="totallyTimeSpent" value="37836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -345,37 +330,6 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25302014" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" weight="0.3295302" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -414,100 +368,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Power.java">
+    <entry file="file://$USER_HOME$/Downloads/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="46">
+          <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Cos.java">
+    <entry file="file://$USER_HOME$/Downloads/Power.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#92#93#0" expanded="true" />
-            <element signature="e#126#127#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="522">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Sin.java">
+    <entry file="file://$USER_HOME$/Downloads/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="233">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Log.java">
+    <entry file="file://$USER_HOME$/Downloads/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Node (1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Variable.java">
+    <entry file="file://$USER_HOME$/Downloads/Power (1).java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="148">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Main.java">
+    <entry file="file://$USER_HOME$/Downloads/Variable (1).java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1206">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="442">
+          <caret line="34" selection-start-line="34" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Node.java">
+    <entry file="file://$USER_HOME$/Downloads/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="437">
+          <caret line="38" selection-start-line="38" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="595">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#681#682#0" expanded="true" />
@@ -516,20 +434,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/test (1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Sum (1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1093" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Prod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Exponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
+            <element signature="e#267#268#0" expanded="true" />
             <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        <state relative-caret-position="46">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -538,18 +520,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Prod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Sin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#93#94#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Cos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#92#93#0" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
           </folding>
         </state>
       </provider>

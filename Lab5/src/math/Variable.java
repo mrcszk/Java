@@ -30,4 +30,10 @@ public class Variable extends Node {
     boolean isZero(Variable variable) {
         return !variable.name.equals(name);
     }
+
+    @Override
+    Node simplify(){
+        return this;
+
+    }
 }

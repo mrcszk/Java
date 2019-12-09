@@ -16,7 +16,15 @@ public class Log extends Node {
 
     @Override
     public String toString() {
-        return "log_" + base + " (" + value.toString() + ')';
+        StringBuilder s =  new StringBuilder();
+        if(sign<0)s.append("-(");
+        s.append("log_");
+        s.append(base.toString());
+        s.append(" (");
+        s.append(value.toString());
+        s.append(')');
+        if(sign<0)s.append(")");
+        return s.toString();
     }
 
     @Override
@@ -30,5 +38,11 @@ public class Log extends Node {
     }
     boolean isZero(Variable variable) {
         return value instanceof Constant && value.evaluate() == 0;
+    }
+
+    @Override
+    Node simplify(){
+        return this;
+
     }
 }

@@ -1,6 +1,7 @@
 package math;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Prod extends Node {
@@ -72,7 +73,6 @@ public class Prod extends Node {
         if(sign<0)b.append("-");
         for ( int i = 0; i < args.size(); i++) {
             if ( args.get(i).getSign() < 0 ) b.append("(");
-            if(args.get(i).toString().equals("1")) continue;
             if ( i > 0 ) b.append("*");
             b.append(args.get(i).toString());
             if ( args.get(i).getSign() < 0 ) b.append(")");
@@ -90,5 +90,42 @@ public class Prod extends Node {
             }
         }
         return false;
+    }
+
+    Node simplify(){
+        for (Node arg : args) {
+            arg.simplify();
+        }
+        List<Node> y = new ArrayList<>();
+        double s = 1;
+        for (int j =0; j < args.size(); ++j) {
+            Node arg = args.get(j);
+            if (arg instanceof Prod){
+                for (int i = 0; i < arg.getArgumentsCount(); i++) {
+                    this.mul(((Prod) arg). args.get(i));
+                }
+                args.remove(arg);
+            }
+        }
+        for (Node arg : args) {
+            if(arg instanceof Constant ){
+                double x = arg.evaluate();
+                if (x != 0){
+                    s*=x;
+                    y.add(arg);
+                }else {
+                    return new Constant(0);
+                }
+            }
+        }
+
+        for (Node y1 : y) {
+            args.remove(y1);
+        }
+
+        if(s == 1) return this;
+        args.add(0,new Constant(s));
+
+        return this;
     }
 }

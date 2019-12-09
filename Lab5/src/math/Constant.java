@@ -32,4 +32,10 @@ public class Constant extends Node {
     boolean isZero(Variable variable) {
         return false;
     }
+
+    @Override
+    Node simplify(){
+        return this;
+
+    }
 }
