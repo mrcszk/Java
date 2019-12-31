@@ -2,9 +2,10 @@ package CSV;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.*;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class AdminUnitList {
     List<AdminUnit> units = new ArrayList<>();
@@ -94,69 +95,5 @@ public class AdminUnitList {
         return neighbourList;
     }
 
-    class AdminUnitComparator implements Comparator<AdminUnit> {
-        public int compare(AdminUnit o1, AdminUnit o2) {
-            return o1.getName().compareTo(o2.getName());
-        }
-    }
-
-    AdminUnitList sortInplaceByName(){
-        units.sort(new AdminUnitComparator());
-        return this;
-    }
-
-    AdminUnitList sortInplaceByArea(){
-        units.sort(new Comparator<AdminUnit>() {
-            @Override
-            public int compare(AdminUnit o1, AdminUnit o2) {
-                return Double.compare(o1.getArea(),o2.getArea());
-            }
-        });
-        return this;
-    }
-
-    AdminUnitList sortByArea() {
-        AdminUnitList result = new AdminUnitList();
-        result.units = new ArrayList<>(units);
-        result.sortInplaceByArea();
-        return result;
-    }
-
-    AdminUnitList sortInplaceByPopulation(){
-        units.sort((o1, o2) -> (Double.compare(o1.getPopulation(),o2.getPopulation())));
-        return this;
-    }
-
-    AdminUnitList sortInplace(Comparator<AdminUnit> cmp){
-        units.sort(cmp);
-        return this;
-    }
-
-    AdminUnitList sort(Comparator<AdminUnit> cmp){
-        AdminUnitList result = new AdminUnitList();
-        result.units = new ArrayList<>(units);
-        result.sortInplace(cmp);
-        return result;
-    }
-
-    AdminUnitList filter(Predicate<AdminUnit> pred) {
-        AdminUnitList result = new AdminUnitList();
-        result.units = new ArrayList<>(units);
-        result.units = units.stream().filter(pred).collect(Collectors.toList());
-        return result;
-    }
-
-    AdminUnitList filter(Predicate<AdminUnit> pred, int limit){
-        AdminUnitList result = new AdminUnitList();
-        result.units = new ArrayList<>(units);
-        result.units = units.stream().filter(pred).limit(limit).collect(Collectors.toList());
-        return result;
-    }
-
-    AdminUnitList filter(Predicate<AdminUnit> pred, int offset, int limit){
-        AdminUnitList result = new AdminUnitList();
-        result.units = new ArrayList<>(units);
-        result.units = units.stream().filter(pred).skip(offset).limit(limit).collect(Collectors.toList());
-        return result;
-    }
+    
 }

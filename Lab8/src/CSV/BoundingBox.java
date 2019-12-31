@@ -1,4 +1,5 @@
 package CSV;
+
 import java.util.Locale;
 
 public class BoundingBox {
